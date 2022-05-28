@@ -96,8 +96,8 @@ def about_popover(n, is_open, active):
 ########################## Body ##########################
 # Input
 inputs = dbc.FormGroup([
-    ## hide these 2 inputs if file is uploaded
-    html.Div(id='hide-seek', children=[
+
+    html.Div(children=[
 
         dbc.Label("Ubicación", html_for="n-ubicacion"),
         dcc.Dropdown(id="n-ubicacion",
