@@ -36,4 +36,4 @@ Estaremos prediciendo entonces:
   - Unicamente en Argentina
   - Sobre los barrios de la Capital Federal. 
 
-## You may also test a working version of the app here: https:// a confirmar .herokuapp.com/
+## You may also test a working version of the app here: https://data-tbh.herokuapp.com/
