@@ -12,7 +12,7 @@ port = int(os.environ.get("PORT", 5000))
 fontawesome = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 
 ## info
-app_name = "Predicctor del Precio de una Vivienda en CABA"
+app_name = "Predictor del Precio de una Vivienda en CABA"
 app_title = "TBH_Data"
 contacts = "https://ar.linkedin.com/in/pablohonnorat"
 code = "https://github.com/poht777/Curso_Data"
