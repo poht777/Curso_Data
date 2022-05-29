@@ -9,7 +9,7 @@ class Model():
 
     def __init__(self):
         ###Al crear el modelo, le cargo los datos necesarios
-        datos = pd.read_csv('~/python/properati_filtrado.csv')
+        datos = pd.read_csv('/wd/python/properati_filtrado.csv')
         self.datos = pd.DataFrame(data = datos)
 
     @staticmethod
