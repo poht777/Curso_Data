@@ -13,13 +13,10 @@ from python.model import Model
 from settings import config
 from flask import Flask
 
-
-
 # App Instance
 server = Flask(__name__)
 app = dash.Dash(server=server, name=config.app_name, assets_folder="static", external_stylesheets=[dbc.themes.LUX, config.fontawesome])
 app.title = config.app_title
-
 
 place_dict = {
     1: 'Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución.',
