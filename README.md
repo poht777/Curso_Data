@@ -36,15 +36,5 @@ Estaremos prediciendo entonces:
   - Unicamente en Argentina
   - Sobre los barrios de la Capital Federal. 
 
-<<<<<<< HEAD
-## Para probar la aplicacion siga las instrucciones:
-1. Debe tener instalado [docker](https://docs.docker.com/engine/install/) y [docker-compose](https://docs.docker.com/compose/install/)
-2. Descargue o clone el repositorio
-3. Abra una consola en el directorio de esta aplicacion
-4. Ejecute docker-compose build 
-5. Luego ejecute docker-compose up
-6. Abra el navegador y visite [http://localhost:5000/](http://localhost:5000/)
-=======
 ## También puede probar una versión funcional de la aplicación aquí: 
 [https://data-tbh.herokuapp.com/](https://data-tbh.herokuapp.com/)
->>>>>>> add_pickle
