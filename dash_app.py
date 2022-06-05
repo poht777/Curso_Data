@@ -18,30 +18,6 @@ server = Flask(__name__)
 app = dash.Dash(server=server, name=config.app_name, assets_folder="static", external_stylesheets=[dbc.themes.LUX, config.fontawesome])
 app.title = config.app_title
 
-
-## Prediccion
-def prediction(tipo, ubicacion, baños, habitaciones, ambientes, supcubierta, suptotal):
-    ###Almaceno los datos recibidos
-    datos_env = [ambientes, habitaciones, baños, suptotal, supcubierta, float(tipo), float(ubicacion)]
-    
-    ###Ejecuto el modelo, debo pasarle los datos como lista! por eso los corchetes sobre la variable
-    filename = 'python/House_price_predicction.pkl'
-    with open(filename, 'rb') as f:
-        modelo_pred = plk.load(f)
-    #modelo_pred = plk.load(open('python/House_price_predicction.pkl', 'rb'))
-    
-    ### Prediccion
-    best_price = modelo_pred.predict(datos_env)
-    
-    ###Devuelvo el precio
-    output = round(best_price[0], 3) #reverting transformations applied 
-    if output<= 0:
-        return ["Lo sentimos, el precio de esta vivienda no pudo ser estimado"]
-    else:
-        return [str(output) + " USD"]
-
-
-
 place_dict = {
     1: 'Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución.',
     2: 'Recoleta.',
